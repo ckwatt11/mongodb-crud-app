@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js", 
+    "test": "mocha --timeout 10000"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/ckwatt11/mongodb-crud-app/issues"
   },
-  "homepage": "https://github.com/ckwatt11/mongodb-crud-app#readme"
+  "homepage": "https://github.com/ckwatt11/mongodb-crud-app#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.8.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.2.0"
+  }
 }
