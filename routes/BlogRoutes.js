@@ -1,5 +1,5 @@
 const exp = require('express');
-const router = exp.router();
+const router = exp.Router();
 const {
     fetchAll, 
     createBl, 
@@ -8,4 +8,8 @@ const {
     delBl
 } = require("../controllers/BlogController")
 
-/* set up routing for request handling */
+/* set up routing for request handling and forwarding to controllers */
+
+router.route("/").get(fetchAll).post(createBl);  // GET and POST requests without id specified
+router.route("/:id").get(fetchById).put(updateBl).delete(delBl); // with
+module.exports = router;
