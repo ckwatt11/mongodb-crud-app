@@ -11,5 +11,5 @@ const {
 /* set up routing for request handling and forwarding to controllers */
 
 router.route("/").get(fetchAll).post(createBl);  // GET and POST requests without id specified
-router.route("/:id").get(fetchById).put(updateBl).delete(delBl); // with
+router.route("/:id").get(fetchById).put(upBl).delete(delBl); // with
 module.exports = router;

@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const chai = require("chai")
 const blRouter = require("./routes/BlogRoutes.js")
 chai.should(); // use the chai assertion library for BDD and TDD
-var PORT = 6000;
+var PORT = 3001;
 
  
 // mount middleware
